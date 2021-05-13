@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo de formulario sencillo</title>
+    <script src="classform.js" defer></script>
+</head>
+<body>
+    <form method="post" name="fSencillo" id="fSencillo" action="comprobar.php">
+        <input type="text" placeholder="Nombre"/><span></span><br><br>
+        <input type="password" placeholder="Clave"/><span></span><br>
+        <input type="file"/><span></span><br>
+        <input type="email" placeholder="Email"/><span></span><br><br>
+        <input type="radio" name="sexo" value="hombre"> Hombre<br>
+        <input type="radio" name="sexo" value="mujer"> Mujer<br>
+        <input type="radio" name="sexo" value="otro">Otro<span></span><br><br>
+        <select>
+            <option value="">--Seleccina una opcion--</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select><span></span><br>
+        Marca para poder enviar<input type="checkbox" value="contenido" id="checkbox1"><span></span><br>
+        <input type="submit" value="Crear cuenta"/>
+        <input type="reset" value="Borrar"/>
+    </form>    
+</body>
+</html>

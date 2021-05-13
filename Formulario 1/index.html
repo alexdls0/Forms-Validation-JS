@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo de formulario sencillo</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form method="post" name="fSencillo" id="fSencillo">
+        <!--NOMBRE-->
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre"/><span></span><br><br>
+        <!--CONTRASEÑA-->
+        <input type="text" id="contraseña" name="contraseña" placeholder="Clave"/><span></span><br>
+        <!--REPETICIÓN DE CONTRASEÑA-->
+        <input type="text" id="repcontr" name="repcontr" placeholder="Repite"/><span></span><br><br>
+        <!--EMAIL-->
+        <input type="mail" id="email" name="email" placeholder="Email"/><span></span><br><br>
+        <!--SEXO-->
+        <input type="radio" name="sexo" id="sexo" value="hombre"> Hombre<br>
+        <input type="radio" name="sexo" id="sexo" value="mujer"> Mujer<br>
+        <span></span><br>
+        <!--FECHA DE NACIMIENTO-->
+        <p>Seleccione su fecha de nacimiento</p>
+        <input type="date" id="fecha" name="fecha"/><span id="fechaError"></span><br><br>
+        <!--CIUDAD-->
+        <input type="text" name="ciudad" placeholder="ciudad"/><br>
+        <!--PAÍS-->
+        <input type="text" name="pais" placeholder="pais"/><br>
+        <!--FOTO-->
+        <input type="file" name="foto" id="foto"/><span id="spanFoto"></span><br><br>
+        <!--SUMA-->
+        <span id="num1"></span><span>+</span><span id="num2"></span><span>=</span>
+        <input type="text" name="suma" id="suma" placeholder"Suma"/><span></span><br><br>
+        <!--ACEPTO CONDICIONES-->
+        <input type="checkbox" id="condiciones" value="aceptoCondiciones" name="condiciones"> Acepto las condiciones de uso
+        <span></span><br><br>
+        <!--CUENTA NUEVA-->
+        <input type="submit" value="Crear cuenta" id="cuenta" disabled/>
+        <!--BORRADO-->
+        <input type="reset" value="Borrar"/>
+    </form>    
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo de formulario sencillo</title>
+    <script src="classform.js" defer></script>
+</head>
+<body>
+    <form class="frm-login-box frm-border validarForm" id="pruebaID" name="flogin" action="comprobar.php">
+        <label>Email</label><br>
+        <input class="input-md full-width validemail" name="mail" title="Email" id="primerinput" placeholder="Email" aria-required="true">
+        <br><label>Nombre</label><br>
+        <input class="input-md full-width validname" name="name" title="Nombre" placeholder="Nombre" data-min="5" data-max="20" aria-required="true">
+        <br><label>Apellidos</label><br>
+        <input class="input-md full-width validsurname" name="surname" title="Apellidos" placeholder="Apellidos" data-min="3" data-max="30" aria-required="true">
+        <br><label>Alias</label><br>
+        <input class="input-md full-width validalias validopcional" name="alias" title="Alias" placeholder="Alias" data-min="3" data-max="30" aria-required="true">
+        <br><label>Direccion</label><br>
+        <input class="input-md full-width validaddress validopcional" name="direccion" title="Direccion" placeholder="Direccion" data-min="15" data-max="50" aria-required="true">
+        <!--<label>Foto</label>
+        <input type="file" class="validphoto"/>-->
+        <br><label>Contraseña</label><br>
+        <input class="input-md full-width validpass parclave validopcional" name="password" title="Contraseña" placeholder="Contraseña" type="password" aria-required="true">
+        <br><label>Repita Contraseña</label><br>
+        <input class="input-md full-width validpassrep parclave" name="password" title="Contraseña" placeholder="Contraseña" type="password" aria-required="true">
+        <br><label>Foto</label><br>
+        <input class="input-md full-width" name="photo" type="file" />
+        <br><input name="submit"  class="submit btn btn-md btn-black validacion" value="Acceder" type="submit">
+        <button id="btregistro" class="btn btn-md btn-color comprobarbutton">Comprobar datos</button>
+        <button id="btregistro" class="btn btn-md btn-color validarbutton" disabled>Registrate!</button>
+    </form>
+    <hr>
+    <form class="validarForm" id="holita" action="comprobar.php">
+        <div class="form-input-wrapper form-center">
+          <label class="left">
+          Contraseña
+          <abbr class="form-required" title="Obligatorio">*</abbr>
+          </label>
+          <input class="input-md full-width validpass" name="password" title="Contraseña" placeholder="Contraseña" type="password" aria-required="true">
+       </div>
+       <div class="form-input-wrapper">
+          <input name="submit" id="submit" class="submit btn btn-md btn-black validacion" value="Acceder" type="submit">
+       </div>
+       <label class="left">
+          Email
+          <abbr class="form-required" title="Obligatorio">*</abbr>
+          </label>
+          <input class="input-md full-width validaremail validemail" name="mail" title="Email" placeholder="Email" aria-required="true">
+    </form>
+    <!--<form method="post" name="fSencillo" id="fSencillo">
+        <input type="text" placeholder="Nombre"/><span></span><br><br>
+        <input type="password" placeholder="Clave"/><span></span><br>
+        <input type="file"/><span></span><br>
+        <input type="email" placeholder="Email"/><span></span><br><br>
+        <input type="radio" name="sexo" value="hombre"> Hombre<br>
+        <input type="radio" name="sexo" value="mujer"> Mujer<br>
+        <input type="radio" name="sexo" value="otro">Otro<span></span><br><br>
+        <select>
+            <option value="">--Seleccina una opcion--</option>
+            <option value="saab">Saab</option>
+            <option value="opel">Opel</option>
+            <option value="audi">Audi</option>
+        </select><span></span><br>
+        Marca para poder enviar<input type="checkbox" value="contenido" id="checkbox1"><span></span><br>
+        <input type="submit" value="Crear cuenta"/>
+        <input type="reset" value="Borrar"/>
+    </form>-->
+</body>
+</html>

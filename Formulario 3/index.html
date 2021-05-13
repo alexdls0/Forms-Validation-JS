@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo de formulario sencillo</title>
+    <script src="scriptf2.js" defer></script>
+</head>
+<body>
+    <h1 id="tiempo"></h1>
+    <form method="post" name="f2" id="f2">
+        <!--Pregunta 1-->
+        <p>1- ¿En qué lugar se ejecuta generalmente el código JavaScript?</p>
+        
+        <input type="radio" name="p1" value="error">
+        <label>Servidor</label><br>
+        
+        <input type="radio" name="p1" value="correcto">
+        <label>Cliente</label><br>
+        
+        <!--Pregunta 2-->
+        
+        <p>2- ¿Cuáles de estas son marcas para la inserción del código JavaScript en las páginas HTML?</p>
+        
+        <input type="radio" name="p2" value="correcto">
+        <label>< script > y < /script ></label><br>
+        
+        <input type="radio" name="p2" value="incorrecto">
+        <label>< javascript _code > y < /javascript_code ></label><br>
+        
+        <!--Pregunta 3-->
+        <p>3- La llamada al código Javascript puede colocarse en:</p>
+        
+        <input type="checkbox" name="p3[]" value="correcto"> La sección  body<br>
+        <input type="checkbox" name="p3[]" value="incorrecto"> Antes de la etiqueta HTML<br>
+        <input type="checkbox" name="p3[]" value="correcto"> La sección head<br>
+        
+        <!--Pregunta 4-->
+        
+        <p>4- En JavaScript, para darle el nombre a una variable, objeto o función, debemos tener en cuenta que:</p>
+        <select id="p4">
+            <option value="inicio">Selecciona tu respuesta</option>
+            <option value="incorrecto">No se pueden usar mayúsculas</option>
+            <option value="incorrecto">JavaScript no distingue entre mayúsculas y minúsculas</option>
+            <option value="correcto">JavaScript diferencia entre mayúsculas y minúsculas</option>
+        </select><br>
+    
+        <!--Pregunta 5-->
+        
+        <p>5-¿Cuál es la instrucción usada para devolver un valor en una función de JavaScript?</p>
+        <input type="text" id="p5"/><br><!--return-->
+        
+        <!--Pregunta 6-->
+        
+        <p>6- Para terminar las instrucciones en Javascript se utiliza:</p>
+        
+        <input type="radio" name="p6" value="incorrecto">
+        <label>La sentencia End.</label><br>
+        
+        <input type="radio" name="p6" value="correcto">
+        <label>Un punto y coma o un salto de línea</label><br>
+
+        <!--Pregunta 7-->
+        
+        <p>7- ¿Cuál de estas instrucciones está correctamente escrita en Javascript?</p>
+        
+        <input type="radio" name="p7" value="correcto">
+        <label>if (a==0) alert (a);</label><br>
+        
+        <input type="radio" name="p7" value="incorrecto">
+        <label>if (a==0) { print [a] }</label><br>
+        
+        <input type="radio" name="p7" value="incorrecto">
+        <label>if (a=0) print a;</label><br>
+        
+        <!--Pregunta 8-->
+        
+        <p>8- ¿Es posible hacer que se ejecute un formulario por JavaScript?</p>
+        
+        <input type="radio" name="p8" value="incorrecto">
+        <label>Sí, de hecho los formularios se crean con código Javascript, por lo que es el propio Javascript el que los ejecuta.</label><br>
+        
+        <input type="radio" name="p8" value="correcto">
+        <label>Sí, por ejemplo basta con pasarle a una función Javascript el identificador del formulario, y aplicarle el comando “submit” para ejecutar ese formulario
+        </label><br>
+        
+        <!--Pregunta 9-->
+        
+        <p>9- Para concatenar cadenas de caracteres en Javascript se usa el carácter:</p>
+        
+        <input type="radio" name="p9" value="incorrecto">
+        <label>. (punto)</label><br>
+        
+        <input type="radio" name="p9" value="incorrecto">
+        <label>* (por)</label><br>
+        
+        <input type="radio" name="p9" value="correcto">
+        <label>+ (más)</label><br>
+        
+        <!--Pregunta 10-->
+        
+        <p>10- ¿Todo el código JavaScript debe estar por fuerza dentro del archivo .html de la página web? Responda razonadamente</p>
+        
+        <textarea rows="4" cols="50" id="texto"></textarea><span></span><br>
+        
+        <!--Pregunta 11-->
+        
+        <p>11- Al crear una variable usando LET esta es de carácter:</p>
+        
+        <input type="radio" name="p11" value="correcto">
+        <label>Local</label><br>
+        
+        <input type="radio" name="p11" value="incorrecto">
+        <label>Global</label><br>
+        
+        <!--CORREGIR-->
+        <input type="submit" value="Corrección" id="evaluar"/>
+        <!--BORRADO-->
+        <input type="reset" value="Borrar respuestas"/><br>
+        <p id="info"></p>
+    </form>    
+</body>
+</html>
